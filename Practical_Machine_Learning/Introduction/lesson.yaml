@@ -1,0 +1,53 @@
+- Class: meta
+  Course: Practical Machine Learning
+  Lesson: Introduction
+  Author: Jakob Schelbert
+  Type: Standard
+  Organization: HireMe :D
+  Version: 2.4.2
+
+- Class: text
+  Output: "Practical Machine Learning - This swirl lesson is meant to be a supplement for the Coursera course on the same topic. Be adviced that this lesson is still in alpha phase (to be adjusted later on)."
+
+
+  
+- Class: mult_question
+  Output: What do you think is a disadvantage of the Base Plotting System?
+  AnswerChoices:  It's intuitive and exploratory; It mirrors how we think of building plots and analyzing data; You can't go back once a plot has started; A complicated plot is a series of simple R commands
+  CorrectAnswer: You can't go back once a plot has started
+  AnswerTests: omnitest(correctVal='You can\'t go back once a plot has started')
+  Hint: Which choice has a negative contraction in it?
+
+
+- Class: cmd_question
+  Output:  Use the R command head with airquality as an argument to see what the data looks like.
+  CorrectAnswer: head(airquality)
+  AnswerTests: omnitest(correctExpr='head(airquality)')
+  Hint: Type head(airquality) at the command prompt.
+
+
+- Class: figure
+  Output: Now for the second plot.
+  Figure: goodPlot1.R
+  
+- Class: script
+  Output: The last R expression to be evaluated in a function will become the 
+    return value of that function. We want this function to take one argument, 
+    x, and return x without modifying it. Delete the pound
+    sign so that x is returned without any modification. Make sure to save your
+    script before you type submit().
+  AnswerTests: test_func1()
+  Hint: Make sure to delete the pound sign so the last expression in the function is just x.
+  Script: boring_function.R
+
+- Class: text
+  Output: Congrats! You've weathered this lesson nicely and passed out of the No!zone.
+
+
+- Class: mult_question
+  Output: "Would you like to receive credit for completing this course on
+    Coursera.org?"
+  CorrectAnswer: NULL
+  AnswerChoices: Yes;No
+  AnswerTests: coursera_on_demand()
+  Hint: ""
